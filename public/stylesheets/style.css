@@ -121,7 +121,32 @@ nav a:hover {
 }
 
 .btn-inline {
-  display: inline;
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  width: 100%;
+  margin: 5px 0;
+  border-radius: var(--border-radius);
+  color: var(--dark);
+  outline: none;
+  background-color: var(--primary);
+}
+
+.form-btn {
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  width: 100%;
+  margin: 5px 0;
+  border-radius: var(--border-radius);
+  color: var(--dark);
+  outline: none;
+  background-color: var(--primary);
+}
+
+.form-btn:hover {
+  color: var(--primary);
+  background-color: var(--dark);
 }
 
 /* CARDS */
@@ -134,12 +159,12 @@ nav a:hover {
 .card-header {
   color: var(--primary);
   background-color: var(--dark);
-  padding: 2.5%;
+  padding: 1%;
   border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
 }
 
 .card-body {
-  padding: 2.5%;
+  padding: 1%;
 }
 
 /* FORM */
@@ -156,7 +181,7 @@ nav a:hover {
 
 .form-input {
   width: 100%;
-  padding: 3%;
+  padding: 1%;
   margin: 5px 0;
   font-size: 1.2rem;
   border: 2px solid var(--dark);
