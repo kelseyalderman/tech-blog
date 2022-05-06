@@ -35,6 +35,14 @@ router.get("/", withAuth, (req, res) => {
     });
 });
 
+// new post
+  router.get("/new", withAuth, (req, res) => {
+    res.render("new-post", {
+      layout: "dashboard",
+    });
+  });
+
+// edit post
 router.get("/edit/:id", withAuth, (req, res) => {
   Post.findByPk(req.params.id, {
     attributes: ["id", "title", "post_body", "created_at"],

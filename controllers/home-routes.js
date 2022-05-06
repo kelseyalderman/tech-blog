@@ -75,6 +75,7 @@ router.get("/post/:id", (req, res) => {
     });
 });
 
+// check if logged in
 router.get("/login", (req, res) => {
   if (req.session.loggedIn) {
     res.redirect("/");
