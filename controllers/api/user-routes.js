@@ -15,6 +15,8 @@ router.get("/", (req, res) => {
 
 // create user (signup)
 router.post("/", (req, res) => {
+  // expects {username: "", password: ""}
+
   User.create({
     username: req.body.username,
     password: req.body.password,
