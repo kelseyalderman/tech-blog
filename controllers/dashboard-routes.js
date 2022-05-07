@@ -39,7 +39,7 @@ router.get("/", withAuth, (req, res) => {
 
 // new post
 router.get("/new", withAuth, (req, res) => {
-  res.render("new-post", {
+  res.render("add-post", {
     layout: "dashboard",
   });
 });
